@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import _ from 'lodash'
 import './App.css'
 
 class App extends Component {
@@ -6,7 +7,7 @@ class App extends Component {
 		super(props)
 
 		this.state = {
-			todos: ['pizza', 'sausage'],
+			todos: [],
 			value: '',
 			filterValue: '',
 		}
@@ -60,7 +61,7 @@ function Todos(props) {
 	return (
 		<div>
 			{props.todos.map(todo => (
-				<Todo val={todo} deleteTodo={props.deleteTodo} />
+				<Todo val={todo} deleteTodo={props.deleteTodo} key={_.random}/>
 			))}
 		</div>
 	)
