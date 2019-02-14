@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders without crashing 1`] = `
+<div>
+  <div>
+    Filter
+    <input
+      type="input"
+      value=""
+    />
+    <br />
+    <br />
+    <input
+      type="input"
+      value=""
+    />
+    <button>
+      Add to do
+    </button>
+    <div>
+      <div>
+        <button>
+          Done
+        </button>
+        pizza
+      </div>
+      <div>
+        <button>
+          Done
+        </button>
+        sausage
+      </div>
+    </div>
+  </div>
+</div>
+`;
